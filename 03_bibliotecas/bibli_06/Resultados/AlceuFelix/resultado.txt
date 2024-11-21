@@ -1,0 +1,17 @@
+Arquivos Esperados Corretos: 2 de 3
+Pastas Compiladas Corretamente: 2 de 3 
+Pastas Linkadas Corretamente: 1 de 3
+Teste main
+  - Resultados corretos: 0 de 6
+  - Valgrinds corretos: 0 de 6
+Nota de AlceuFelix para o teste main: 0
+Teste completo
+  - Resultados corretos: 0 de 6
+  - Valgrinds corretos: 0 de 6
+Nota de AlceuFelix para o teste completo: 0
+Teste temperature_conversor
+  - Resultados corretos: 6 de 6
+  - Valgrinds corretos: 6 de 6
+Nota de AlceuFelix para o teste temperature_conversor: 3.33
+Nota de AlceuFelix: 0+(3.33)+(0)+(0)
+Nota de AlceuFelix: 3.33

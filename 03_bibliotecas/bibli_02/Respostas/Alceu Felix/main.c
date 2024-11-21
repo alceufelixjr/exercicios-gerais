@@ -15,6 +15,7 @@ int main()
     int matrix2[rows2][cols2];
     matrix_read(rows2, cols2, matrix2);
 
+
     while(1)
     {
         printf("1 - Somar matrizes\n2 - Subtrair matrizes\n3 - Multiplicar matrizes\n4 - Multiplicacao de uma matriz por escalar\n5 - Transposta de uma matriz\n6 - Encerrar o programa\nOpcao escolhida: ");
@@ -25,11 +26,13 @@ int main()
             {
                 matrix_add(rows1,cols1,matrix1,rows2,cols2,matrix2,matrix1);
                 matrix_print(rows1,cols1,matrix1);
+                printf("\n");
                 continue;
             }    
             else
             {
-                printf("Erro: as dimensoes da matriz nao correspondem");
+                printf("Erro: as dimensoes da matriz nao correspondem\n");
+                printf("\n");
                 continue;
             }
         }
@@ -39,10 +42,12 @@ int main()
             {
                 matrix_sub(rows1, cols1, matrix1, rows2, cols2, matrix2,matrix1);
                 matrix_print(rows1,cols1,matrix1);
+                printf("\n");
                 continue;
             }else
             {
-                printf("Erro: as dimensoes da matriz nao correspondem");
+                printf("Erro: as dimensoes da matriz nao correspondem\n");
+                printf("\n");
                 continue;
             }
         }
@@ -52,10 +57,12 @@ int main()
             {
                 matrix_multiply(rows1, cols1, matrix1, rows2, cols2, matrix2, matrix1);
                 matrix_print(rows1,cols2,matrix1);
+                printf("\n");
                 continue;
             }else
             {
-                printf("Erro: as dimensoes da matriz nao correspondem");
+                printf("Erro: as dimensoes da matriz nao correspondem\n");
+                printf("\n");
                 continue;
             }
         }
@@ -64,6 +71,7 @@ int main()
             scanf("%d", &scalar);
             scalar_multiply(rows1,cols1,matrix1,scalar);
             matrix_print(rows1, cols1, matrix1);
+            printf("\n");
             continue;
         }
         if(op == 5)
@@ -72,6 +80,7 @@ int main()
             transpose_matrix(rows2,cols2,matrix2,matrix2);
             matrix_print(rows1, cols1, matrix1);
             matrix_print(rows2, cols2, matrix2);
+            printf("\n");
             continue;
         }
         if(op == 6)

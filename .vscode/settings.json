@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "matrix_utils.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "temperature_conversor.h": "c",
+        "constantes.h": "c"
     }
 }
