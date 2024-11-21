@@ -6,7 +6,8 @@ int main(void)
 {
     char nome[] = {"Hello World!"};
 
-    string_length(nome);
+    int i = string_length(nome);
+    printf("%d\n", i);
 
     return 0;
 }

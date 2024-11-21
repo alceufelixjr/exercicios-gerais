@@ -3,10 +3,18 @@
 
 int string_length(char *str)
 {
+    int i = 0; 
     int count = 1;
-    while(strcmp(str,"\0") != 0)
+
+    while(1)
     {
-        str++;
+        if((str[i] == '\0'))
+        {
+            count++;
+            break;
+        }
+        i++;
         count++;
     }
+    return count;
 }
