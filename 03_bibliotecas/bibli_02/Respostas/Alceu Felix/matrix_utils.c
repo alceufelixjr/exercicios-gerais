@@ -4,9 +4,9 @@
 
 void matrix_read(int rows, int cols, int matrix[rows][cols])
 {
-    for (int i = 0; i < cols; i++)
+    for (int i = 0; i < rows; i++)
     {
-        for (int j = 0; j < rows; i++)
+        for (int j = 0; j < cols; i++)
         {
             scanf("%d", &matrix[i][j]);
         }
@@ -16,9 +16,9 @@ void matrix_read(int rows, int cols, int matrix[rows][cols])
 
 void matrix_print(int rows, int cols, int matrix[rows][cols])
 {
-    for (int i = 0; i < cols;i++)
+    for (int i = 0; i < rows;i++)
     {
-        for (int j = 0; i < rows;i++)
+        for (int j = 0; i < cols;i++)
         {
             printf("%d", matrix[i][j]);
             if(j)

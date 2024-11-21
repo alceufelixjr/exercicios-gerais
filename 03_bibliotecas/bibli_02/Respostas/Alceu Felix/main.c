@@ -9,11 +9,11 @@ int main()
 
     scanf("%d %d",&rows1,&cols1);
     int matrix1[rows1][cols1];
-    matrix_read(rows1, cols1, matrix1[rows1][cols1]);
+    matrix_read(rows1, cols1, matrix1);
 
     scanf("%d %d", &rows2, &cols2);
     int matrix2[rows2][cols2];
-    matrix_read(rows2, cols2, matrix2[rows2][cols2]);
+    matrix_read(rows2, cols2, matrix2);
 
     while(1)
     {
@@ -23,8 +23,8 @@ int main()
         {
             if(possible_matrix_sum(rows1,cols1,rows2,cols2))
             {
-                matrix_add(rows1,cols1,matrix1[rows1][cols1],rows2,cols2,matrix2[rows2][cols2],matrix1[rows1][cols1]);
-                matrix_print(rows1,cols1,matrix1[rows1][cols1]);
+                matrix_add(rows1,cols1,matrix1,rows2,cols2,matrix2,matrix1);
+                matrix_print(rows1,cols1,matrix1);
                 continue;
             }    
             else
@@ -37,8 +37,8 @@ int main()
         {
             if(possible_matrix_sub(rows1,cols1,rows2,cols2))
             {
-                matrix_sub(rows1, cols1, matrix1[rows1][cols1], rows2, cols2, matrix2[rows2][cols2],matrix1[rows1][cols1]);
-                matrix_print(rows1,cols1,matrix1[rows1][cols1]);
+                matrix_sub(rows1, cols1, matrix1, rows2, cols2, matrix2,matrix1);
+                matrix_print(rows1,cols1,matrix1);
                 continue;
             }else
             {
@@ -50,8 +50,8 @@ int main()
         {
             if(possible_matrix_multiply(cols1,rows2))
             {
-                matrix_multiply(rows1, cols1, matrix1[rows1][cols1], rows2, cols2, matrix2[rows2][cols2], matrix1[rows1][cols2]);
-                matrix_print(rows1,cols2,matrix1[rows1][cols2]);
+                matrix_multiply(rows1, cols1, matrix1, rows2, cols2, matrix2, matrix1);
+                matrix_print(rows1,cols2,matrix1);
                 continue;
             }else
             {
@@ -62,16 +62,16 @@ int main()
         if(op == 4)
         {
             scanf("%d", &scalar);
-            scalar_multiply(rows1,cols1,matrix1[rows1][cols1],scalar);
-            matrix_print(rows1, cols1, matrix1[rows1][cols1]);
+            scalar_multiply(rows1,cols1,matrix1,scalar);
+            matrix_print(rows1, cols1, matrix1);
             continue;
         }
         if(op == 5)
         {
-            transpose_matrix(rows1,cols1,matrix1[rows1][cols1],matrix1[cols1][rows1]);
-            transpose_matrix(rows2,cols2,matrix2[rows2][cols2],matrix2[cols2][rows2]);
-            matrix_print(rows1, cols1, matrix1[rows1][cols1]);
-            matrix_print(rows2, cols2, matrix2[rows2][cols2]);
+            transpose_matrix(rows1,cols1,matrix1,matrix1);
+            transpose_matrix(rows2,cols2,matrix2,matrix2);
+            matrix_print(rows1, cols1, matrix1);
+            matrix_print(rows2, cols2, matrix2);
             continue;
         }
         if(op == 6)
