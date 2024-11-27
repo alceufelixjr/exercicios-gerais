@@ -7,11 +7,11 @@ int main()
     int rows1, cols1, rows2, cols2;
     int scalar;
 
-    scanf("%d %d",&rows1,&cols1);
+    scanf("%d %d",&rows1,&cols1); //LEITURA MATRIX 1
     int matrix1[rows1][cols1];
     matrix_read(rows1, cols1, matrix1);
 
-    scanf("%d %d", &rows2, &cols2);
+    scanf("%d %d", &rows2, &cols2); //LEITURA MATRIX 2
     int matrix2[rows2][cols2];
     matrix_read(rows2, cols2, matrix2);
 

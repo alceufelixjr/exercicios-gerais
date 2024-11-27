@@ -44,7 +44,7 @@ int main(void)
     }
 
 
-    //diferencaDias = calculaDiferencaDias(data1.dia, data1.mes, data1.ano, data2.dia, data2.mes, data2.ano);
-    //printf("A diferenca em dias entre as datas eh: %02d dias\n", diferencaDias);
+    diferencaDias = calculaDiferencaDias(data1.dia, data1.mes, data1.ano, data2.dia, data2.mes, data2.ano);
+    printf("A diferenca em dias entre as datas eh: %02d dias\n", diferencaDias);
     return 0;
 }

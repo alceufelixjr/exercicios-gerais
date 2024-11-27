@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "string_utils.h": "c",
+        "constantes.h": "c"
+    }
+}

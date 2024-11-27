@@ -1,0 +1,2 @@
+#define NUM_MESES 12
+#define MAX_CHAR_MESES 20

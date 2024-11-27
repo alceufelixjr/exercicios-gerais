@@ -75,7 +75,7 @@ void matrix_sub(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int 
     {
         for (int j = 0; j < cols1; j++)
         {
-            result[i][j] -= matrix2[i][j];
+            result[i][j] = result[i][j] - matrix2[i][j];
         }
     }
 }

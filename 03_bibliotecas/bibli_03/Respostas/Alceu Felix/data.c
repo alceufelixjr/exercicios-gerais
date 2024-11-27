@@ -36,11 +36,11 @@ void imprimeDataExtenso(int dia, int mes, int ano)
 
 int verificaBissexto(int ano)
 {
-    if(ano%100)
-        if(!(ano%4))
-            return 1;
-    else
-        return 0;
+    if(!(ano%4) && ano%100)
+        return 1;
+    if(!(ano%400))
+        return 1;
+    return 0;
 }
 
 int numeroDiasMes(int mes, int ano)
@@ -113,22 +113,29 @@ int calculaDiasAteMes(int mes, int ano)
 
 int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int ano2)
 {
-    int diferencaDias = 0;
-    int comparador = comparaData(dia1, mes1, ano1, dia2, mes2, ano2);
-    if(comparador == -1)
-    {
-        
-    }   
-    if(comparador == 1)
-    {
-        
-    }
-    if(!comparador)
-    {
-        return diferencaDias;
-    }
     
+        int dias1 = dia1 + calculaDiasAteMes(mes1, ano1) + (ano1 - 1) * 365;
+        for (int i = 0; i < ano1; i++)
+        {
+            if(verificaBissexto(i))
+                dias1++;
+        }
 
-    
+        int dias2 = dia2 + calculaDiasAteMes(mes2, ano2) + (ano2 - 1) * 365;
+        for (int i = 0; i < ano2; i++)
+        {
+            if(verificaBissexto(i))
+                dias2++;
+        }
+    if(comparaData(dia1,mes1,ano1,dia2,mes2,ano2) == 1)
+    {
+        return dias1 - dias2;
+    }
+    if(comparaData(dia1,mes1,ano1,dia2,mes2,ano2) == -1)
+    {
+        return dias2 - dias1;
+    }
+    if(!comparaData(dia1,mes1,ano1,dia2,mes2,ano2))
+        return 0;
 }
 
