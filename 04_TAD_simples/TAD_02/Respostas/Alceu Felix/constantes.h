@@ -1,0 +1,3 @@
+#define CONVERT_PERCENTAGE 100
+#define PRESIDENTE 'P'
+#define GOVERNADOR 'G'

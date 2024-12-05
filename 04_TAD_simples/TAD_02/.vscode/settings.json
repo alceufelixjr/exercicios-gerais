@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "candidato.h": "c",
+        "eleitor.h": "c"
+    }
+}
