@@ -1,0 +1,4 @@
+eleicao.c: In function ‘RealizaEleicao’:
+eleicao.c:83:16: warning: statement with no effect [-Wunused-value]
+   83 |     for(eleicao.totalEleitores; eleicao.totalEleitores < nEleitores; eleicao.totalEleitores++)
+      |         ~~~~~~~^~~~~~~~~~~~~~~
