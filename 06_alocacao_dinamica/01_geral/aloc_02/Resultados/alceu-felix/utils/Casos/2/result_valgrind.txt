@@ -1,0 +1,45 @@
+==62383== Memcheck, a memory error detector
+==62383== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==62383== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==62383== Command: Resultados/alceu-felix/utils/prog Resultados/alceu-felix/utils/Casos/2
+==62383== Parent PID: 62382
+==62383== 
+==62383== Invalid read of size 8
+==62383==    at 0x10943B: ImprimeMatrizTransposta (in /home-temp/aluno/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_02/Resultados/alceu-felix/utils/prog)
+==62383==    by 0x10925D: main (in /home-temp/aluno/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_02/Resultados/alceu-felix/utils/prog)
+==62383==  Address 0x4aa9090 is 0 bytes after a block of size 16 alloc'd
+==62383==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==62383==    by 0x1092AD: CriaMatriz (in /home-temp/aluno/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_02/Resultados/alceu-felix/utils/prog)
+==62383==    by 0x109231: main (in /home-temp/aluno/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_02/Resultados/alceu-felix/utils/prog)
+==62383== 
+==62383== Invalid read of size 4
+==62383==    at 0x10946F: ImprimeMatrizTransposta (in /home-temp/aluno/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_02/Resultados/alceu-felix/utils/prog)
+==62383==    by 0x10925D: main (in /home-temp/aluno/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_02/Resultados/alceu-felix/utils/prog)
+==62383==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==62383== 
+==62383== 
+==62383== Process terminating with default action of signal 11 (SIGSEGV)
+==62383==  Access not within mapped region at address 0x0
+==62383==    at 0x10946F: ImprimeMatrizTransposta (in /home-temp/aluno/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_02/Resultados/alceu-felix/utils/prog)
+==62383==    by 0x10925D: main (in /home-temp/aluno/exercicios-gerais/06_alocacao_dinamica/01_geral/aloc_02/Resultados/alceu-felix/utils/prog)
+==62383==  If you believe this happened as a result of a stack
+==62383==  overflow in your program's main thread (unlikely but
+==62383==  possible), you can try to increase the size of the
+==62383==  main thread stack using the --main-stacksize= flag.
+==62383==  The main thread stack size used in this run was 8388608.
+==62383== 
+==62383== HEAP SUMMARY:
+==62383==     in use at exit: 4,184 bytes in 8 blocks
+==62383==   total heap usage: 8 allocs, 0 frees, 4,184 bytes allocated
+==62383== 
+==62383== LEAK SUMMARY:
+==62383==    definitely lost: 0 bytes in 0 blocks
+==62383==    indirectly lost: 0 bytes in 0 blocks
+==62383==      possibly lost: 0 bytes in 0 blocks
+==62383==    still reachable: 4,184 bytes in 8 blocks
+==62383==         suppressed: 0 bytes in 0 blocks
+==62383== Reachable blocks (those to which a pointer was found) are not shown.
+==62383== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==62383== 
+==62383== For lists of detected and suppressed errors, rerun with: -s
+==62383== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

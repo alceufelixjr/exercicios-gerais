@@ -1,0 +1,17 @@
+Arquivos Esperados Corretos: 2 de 3
+Pastas Compiladas Corretamente: 2 de 3 
+Pastas Linkadas Corretamente: 1 de 3
+Teste main
+  - Resultados corretos: 0 de 2
+  - Valgrinds corretos: 0 de 2
+Nota de alceu-felix para o teste main: 0
+Teste completo
+  - Resultados corretos: 0 de 2
+  - Valgrinds corretos: 0 de 2
+Nota de alceu-felix para o teste completo: 0
+Teste utils
+  - Resultados corretos: 1 de 2
+  - Valgrinds corretos: 1 de 2
+Nota de alceu-felix para o teste utils: 1.67
+Nota de alceu-felix: 0+(1.67)+(0)+(0)
+Nota de alceu-felix: 1.67
