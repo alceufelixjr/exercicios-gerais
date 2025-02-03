@@ -1,0 +1,6 @@
+/usr/bin/ld: Resultados/alceu-felix/jogo/main.o: in function `main':
+main.c:(.text+0x12): undefined reference to `CriaJogo'
+/usr/bin/ld: main.c:(.text+0x22): undefined reference to `ComecaJogo'
+/usr/bin/ld: main.c:(.text+0x2e): undefined reference to `DestroiJogo'
+/usr/bin/ld: main.c:(.text+0x38): undefined reference to `ContinuaJogo'
+collect2: error: ld returned 1 exit status

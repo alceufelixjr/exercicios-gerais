@@ -1,0 +1,8 @@
+/usr/bin/ld: Resultados/alceu-felix/jogada/jogador.o: in function `JogaJogador':
+jogador.c:(.text+0x98): undefined reference to `CriaJogada'
+/usr/bin/ld: jogador.c:(.text+0xc4): undefined reference to `LeJogada'
+/usr/bin/ld: jogador.c:(.text+0xd0): undefined reference to `FoiJogadaBemSucedida'
+/usr/bin/ld: jogador.c:(.text+0x11c): undefined reference to `ObtemJogadaX'
+/usr/bin/ld: jogador.c:(.text+0x12b): undefined reference to `ObtemJogadaY'
+/usr/bin/ld: jogador.c:(.text+0x208): undefined reference to `DestroiJogada'
+collect2: error: ld returned 1 exit status

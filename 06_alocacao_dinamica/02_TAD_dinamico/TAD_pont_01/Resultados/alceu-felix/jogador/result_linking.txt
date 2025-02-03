@@ -1,0 +1,12 @@
+/usr/bin/ld: Resultados/alceu-felix/jogador/jogo.o: in function `CriaJogo':
+jogo.c:(.text+0x56): undefined reference to `CriaJogador'
+/usr/bin/ld: jogo.c:(.text+0x68): undefined reference to `CriaJogador'
+/usr/bin/ld: Resultados/alceu-felix/jogador/jogo.o: in function `DestroiJogo':
+jogo.c:(.text+0xa5): undefined reference to `DestroiJogador'
+/usr/bin/ld: jogo.c:(.text+0xb5): undefined reference to `DestroiJogador'
+/usr/bin/ld: Resultados/alceu-felix/jogador/jogo.o: in function `ComecaJogo':
+jogo.c:(.text+0xfc): undefined reference to `JogaJogador'
+/usr/bin/ld: jogo.c:(.text+0x116): undefined reference to `VenceuJogador'
+/usr/bin/ld: jogo.c:(.text+0x158): undefined reference to `JogaJogador'
+/usr/bin/ld: jogo.c:(.text+0x172): undefined reference to `VenceuJogador'
+collect2: error: ld returned 1 exit status
