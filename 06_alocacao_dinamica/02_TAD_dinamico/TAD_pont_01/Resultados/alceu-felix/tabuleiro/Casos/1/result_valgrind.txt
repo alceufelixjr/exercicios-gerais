@@ -1,23 +1,23 @@
-==41030== Memcheck, a memory error detector
-==41030== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==41030== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==41030== Command: Resultados/alceu-felix/tabuleiro/prog Resultados/alceu-felix/tabuleiro/Casos/1
-==41030== Parent PID: 41029
-==41030== 
-==41030== Invalid read of size 1
-==41030==    at 0x109F07: EstaLivrePosicaoTabuleiro (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==41030==    by 0x10946C: JogaJogador (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==41030==    by 0x109984: ComecaJogo (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==41030==    by 0x109B8D: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==41030==  Address 0x4aa81a1 is 0 bytes after a block of size 1 alloc'd
-==41030==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==41030==    by 0x109C49: CriaTabuleiro (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==41030==    by 0x1098CD: CriaJogo (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==41030==    by 0x109B7D: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==41030== 
-==41030== Conditional jump or move depends on uninitialised value(s)
-==41030==    at 0x109F0C: EstaLivrePosicaoTabuleiro (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==41030==    by 0x10946C: JogaJogador (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==41030==    by 0x109984: ComecaJogo (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==41030==    by 0x109B8D: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==41030== 
+==5166== Memcheck, a memory error detector
+==5166== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==5166== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==5166== Command: Resultados/alceu-felix/tabuleiro/prog Resultados/alceu-felix/tabuleiro/Casos/1
+==5166== Parent PID: 5165
+==5166== 
+==5166== Invalid read of size 1
+==5166==    at 0x109F14: EstaLivrePosicaoTabuleiro (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
+==5166==    by 0x10946C: JogaJogador (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
+==5166==    by 0x109984: ComecaJogo (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
+==5166==    by 0x109B8D: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
+==5166==  Address 0x4a7e1a1 is 0 bytes after a block of size 1 alloc'd
+==5166==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5166==    by 0x109C4A: CriaTabuleiro (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
+==5166==    by 0x1098CD: CriaJogo (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
+==5166==    by 0x109B7D: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
+==5166== 
+==5166== Conditional jump or move depends on uninitialised value(s)
+==5166==    at 0x109F19: EstaLivrePosicaoTabuleiro (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
+==5166==    by 0x10946C: JogaJogador (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
+==5166==    by 0x109984: ComecaJogo (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
+==5166==    by 0x109B8D: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
+==5166== 
