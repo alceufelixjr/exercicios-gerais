@@ -77,11 +77,11 @@ void MarcaPosicaoTabuleiro(tTabuleiro* tabuleiro, int peca, int x, int y)
             {
                 if(j == y)
                 {
-                    if(peca == 1)
+                    if(peca == PECA_1)
                     {
                         tabuleiro->posicoes[i][j] = 'X';
                     }
-                    else if(peca == 2)
+                    else if(peca == PECA_2)
                         tabuleiro->posicoes[i][j] = 'O';
                 }
             }

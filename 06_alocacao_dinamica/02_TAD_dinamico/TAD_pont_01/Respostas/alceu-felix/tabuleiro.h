@@ -3,8 +3,8 @@
 
 
 #define TAM_TABULEIRO 3
-#define PECA_1 1 //X
-#define PECA_2 2 //0
+#define PECA_1 1 
+#define PECA_2 2 
 
 typedef struct{
     char** posicoes;

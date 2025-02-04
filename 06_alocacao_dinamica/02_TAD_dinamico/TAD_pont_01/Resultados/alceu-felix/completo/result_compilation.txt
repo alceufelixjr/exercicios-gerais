@@ -1,8 +1,4 @@
-tabuleiro.c: In function ‘CriaTabuleiro’:
-tabuleiro.c:26:5: warning: statement with no effect [-Wunused-value]
-   26 |     for(i;i < TAM_TABULEIRO; i++)
-      |     ^~~
 tabuleiro.c: In function ‘EstaMarcadaPosicaoPecaTabuleiro’:
-tabuleiro.c:127:23: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
-  127 |                     if(peca == 1)
+tabuleiro.c:134:23: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
+  134 |                     if(peca == 1)
       |                       ^

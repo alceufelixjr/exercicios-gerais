@@ -2,6 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// typedef struct{
+//     char** posicoes;
+//     char peca1;
+//     char peca2;
+//     char pecaVazio;
+// } tTabuleiro;
+
+
 /**
  * Aloca e retorna uma estrutura do tipo tTabuleiro.
  * Se a alocação falhar, o programa é encerrado.
@@ -22,15 +30,14 @@ tTabuleiro* CriaTabuleiro()
         printf("ERRO!\n");
         exit(1);
     }
-    int i = 0;
-    for(i;i < TAM_TABULEIRO; i++)
+    for(int i = 0;i < TAM_TABULEIRO; i++)
     {
+        tabuleiro->posicoes[i] = (char *) malloc (sizeof(char));
         if(tabuleiro->posicoes[i] == NULL)
         {
             printf("ERRO!\n");
             exit(1);
         }
-        tabuleiro->posicoes[i] = (char *) malloc (sizeof(char));
     }
     return tabuleiro;
 }
@@ -70,11 +77,11 @@ void MarcaPosicaoTabuleiro(tTabuleiro* tabuleiro, int peca, int x, int y)
             {
                 if(j == y)
                 {
-                    if(peca == 1)
+                    if(peca == PECA_1)
                     {
                         tabuleiro->posicoes[i][j] = 'X';
                     }
-                    else if(peca == 2)
+                    else if(peca == PECA_2)
                         tabuleiro->posicoes[i][j] = 'O';
                 }
             }
