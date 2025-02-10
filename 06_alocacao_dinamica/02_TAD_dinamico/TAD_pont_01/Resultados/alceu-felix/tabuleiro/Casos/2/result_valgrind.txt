@@ -1,23 +1,15 @@
-==5301== Memcheck, a memory error detector
-==5301== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==5301== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==5301== Command: Resultados/alceu-felix/tabuleiro/prog Resultados/alceu-felix/tabuleiro/Casos/2
-==5301== Parent PID: 5300
-==5301== 
-==5301== Conditional jump or move depends on uninitialised value(s)
-==5301==    at 0x109F19: EstaLivrePosicaoTabuleiro (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==5301==    by 0x10946C: JogaJogador (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==5301==    by 0x109984: ComecaJogo (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==5301==    by 0x109B8D: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==5301== 
-==5301== Invalid read of size 1
-==5301==    at 0x109F14: EstaLivrePosicaoTabuleiro (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==5301==    by 0x10946C: JogaJogador (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==5301==    by 0x109984: ComecaJogo (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==5301==    by 0x109B8D: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==5301==  Address 0x4a7e1a1 is 0 bytes after a block of size 1 alloc'd
-==5301==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==5301==    by 0x109C4A: CriaTabuleiro (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==5301==    by 0x1098CD: CriaJogo (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==5301==    by 0x109B7D: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_01/Resultados/alceu-felix/tabuleiro/prog)
-==5301== 
+==53196== Memcheck, a memory error detector
+==53196== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==53196== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==53196== Command: Resultados/alceu-felix/tabuleiro/prog Resultados/alceu-felix/tabuleiro/Casos/2
+==53196== Parent PID: 53195
+==53196== 
+==53196== 
+==53196== HEAP SUMMARY:
+==53196==     in use at exit: 0 bytes in 0 blocks
+==53196==   total heap usage: 36 allocs, 36 frees, 8,570 bytes allocated
+==53196== 
+==53196== All heap blocks were freed -- no leaks are possible
+==53196== 
+==53196== For lists of detected and suppressed errors, rerun with: -s
+==53196== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

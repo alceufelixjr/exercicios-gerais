@@ -1,4 +1,4 @@
 tabuleiro.c: In function ‘EstaMarcadaPosicaoPecaTabuleiro’:
-tabuleiro.c:134:23: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
-  134 |                     if(peca == 1)
+tabuleiro.c:123:23: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wdangling-else]
+  123 |                     if(peca == PECA_1)
       |                       ^

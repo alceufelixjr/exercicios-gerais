@@ -1,0 +1,3 @@
+/usr/bin/ld: Resultados/alceu-felix/pad/main.o: in function `main':
+main.c:(.text+0x2a): undefined reference to `ImprimeRelatorioPad'
+collect2: error: ld returned 1 exit status

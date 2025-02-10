@@ -18,27 +18,16 @@
  */
 tTabuleiro* CriaTabuleiro()
 {
-    tTabuleiro* tabuleiro = (tTabuleiro*) malloc (sizeof(tTabuleiro));
-    if(tabuleiro == NULL)
-    {
-        printf("ERRO!\n");
-        exit(1);
-    }
-    tabuleiro->posicoes = (char**) malloc (TAM_TABULEIRO*sizeof(char*));
-    if(tabuleiro->posicoes == NULL)
-    {
-        printf("ERRO!\n");
-        exit(1);
-    }
-    for(int i = 0;i < TAM_TABULEIRO; i++)
-    {
-        tabuleiro->posicoes[i] = (char *) malloc (sizeof(char));
-        if(tabuleiro->posicoes[i] == NULL)
-        {
-            printf("ERRO!\n");
-            exit(1);
+    tTabuleiro *tabuleiro = (tTabuleiro *) calloc(1, sizeof(tTabuleiro));
+    tabuleiro->posicoes = (char **) calloc(TAM_TABULEIRO, sizeof(char *));
+    
+    for (int i = 0; i < TAM_TABULEIRO; i++) {
+        tabuleiro->posicoes[i] = (char *) calloc(TAM_TABULEIRO, sizeof(char));
+        for (int j = 0; j < TAM_TABULEIRO; j++) {
+            tabuleiro->posicoes[i][j] = '-';  // Inicializa todas as posições com '-'
         }
     }
+    
     return tabuleiro;
 }
 
@@ -131,10 +120,10 @@ int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro* tabuleiro, int x, int y, int pec
             {
                 if(j == y)
                 {
-                    if(peca == 1)
+                    if(peca == PECA_1)
                         if(tabuleiro->posicoes[i][j] == 'X')
                             return 1;
-                    else if(peca == 2)
+                    else if(peca == PECA_2)
                         if(tabuleiro->posicoes[i][j] == 'O')
                             return 1;
                 }
