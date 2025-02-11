@@ -220,17 +220,17 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  -----
  - Pasta tabuleiro / Caso 1:
  - Arquivo de output gerado: Resultados/alceu-felix/tabuleiro/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 53, frees: 53, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 79, frees: 79, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta tabuleiro / Caso 2:
  - Arquivo de output gerado: Resultados/alceu-felix/tabuleiro/Casos/2/result_valgrind.txt.
- - Valgrind: Ok! allocs: 36, frees: 36, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 68, frees: 68, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta tabuleiro / Caso 3:
  - Arquivo de output gerado: Resultados/alceu-felix/tabuleiro/Casos/3/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 47, frees: 47, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta tabuleiro / Caso 4:
@@ -240,7 +240,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta tabuleiro / Caso 5:
  - Arquivo de output gerado: Resultados/alceu-felix/tabuleiro/Casos/5/result_valgrind.txt.
- - Valgrind: Ok! allocs: 53, frees: 53, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 79, frees: 79, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta tabuleiro / Caso 6:

@@ -16,10 +16,10 @@
  */ 
 tLesao* CriaLesao()
 {
-    tLesao *l = (tLesao *) calloc (1,sizeof(tLesao));
-    l->id = (char *) calloc (1,sizeof(char)*TAM_ID);
-    l->diagnostico = (char *) calloc (1,sizeof(char)*TAM_DIAG);
-    l->regiao_corpo = (char *) calloc (1,sizeof(char)*TAM_REG);
+    tLesao *l = (tLesao *) malloc (sizeof(tLesao));
+    l->id = (char *) malloc (sizeof(char)*TAM_ID);
+    l->diagnostico = (char *) malloc (sizeof(char)*TAM_DIAG);
+    l->regiao_corpo = (char *) malloc (sizeof(char)*TAM_REG);
 
     return l;
 }
@@ -44,12 +44,14 @@ void LeLesao(tLesao* l)
  */
 void LiberaLesao(tLesao* l)
 {
-    if(l != NULL){
+    if(l != NULL)
+    {
         free(l->diagnostico);
-        free(l->regiao_corpo);
         free(l->id);
+        free(l->regiao_corpo);
         free(l);
     }
+    
 }
 
 /**
@@ -75,3 +77,4 @@ int PrecisaCirurgiaLesao(tLesao* l)
         return 1;
     return 0;
 }
+

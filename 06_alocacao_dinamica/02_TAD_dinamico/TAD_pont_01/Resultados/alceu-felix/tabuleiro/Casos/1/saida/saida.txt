@@ -1,107 +1,107 @@
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [1,1]!
-45 45 45
-45 88 45
-45 45 45
+---
+-X-
+---
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [0,0]!
-79 45 45
-45 88 45
-45 45 45
+O--
+-X-
+---
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,0]!
-79 45 45
-45 88 45
-88 45 45
+O--
+-X-
+X--
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [1,0]!
-79 45 45
-79 88 45
-88 45 45
+O--
+OX-
+X--
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,2]!
-79 45 45
-79 88 45
-88 45 88
+O--
+OX-
+X-X
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [0,1]!
-79 79 45
-79 88 45
-88 45 88
+OO-
+OX-
+X-X
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [1,2]!
-79 79 45
-79 88 88
-88 45 88
+OO-
+OXX
+X-X
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [2,1]!
-79 79 45
-79 88 88
-88 79 88
+OO-
+OXX
+XOX
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [0,2]!
-79 79 88
-79 88 88
-88 79 88
+OOX
+OXX
+XOX
 JOGADOR 1 Venceu!
 Jogar novamente? (s,n)
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [1,1]!
-45 45 45
-45 88 45
-45 45 45
+---
+-X-
+---
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [0,0]!
-79 45 45
-45 88 45
-45 45 45
+O--
+-X-
+---
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,0]!
-79 45 45
-45 88 45
-88 45 45
+O--
+-X-
+X--
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [1,0]!
-79 45 45
-79 88 45
-88 45 45
+O--
+OX-
+X--
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,2]!
-79 45 45
-79 88 45
-88 45 88
+O--
+OX-
+X-X
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [0,1]!
-79 79 45
-79 88 45
-88 45 88
+OO-
+OX-
+X-X
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [1,2]!
-79 79 45
-79 88 88
-88 45 88
+OO-
+OXX
+X-X
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [2,1]!
-79 79 45
-79 88 88
-88 79 88
+OO-
+OXX
+XOX
 Jogador 1
 Digite uma posicao (x e y):
 Posicao invalida (OCUPADA - [2,0] )!
@@ -113,10 +113,10 @@ Digite uma posicao (x e y):
 Posicao invalida (FORA DO TABULEIRO - [3,3] )!
 Jogador 1
 Digite uma posicao (x e y):
-Posicao invalida (OCUPADA - [-1,1] )!
+Posicao invalida (FORA DO TABULEIRO - [-1,1] )!
 Jogador 1
 Digite uma posicao (x e y):
-Posicao invalida (OCUPADA - [0,-1] )!
+Posicao invalida (FORA DO TABULEIRO - [0,-1] )!
 Jogador 1
 Digite uma posicao (x e y):
 Posicao invalida (FORA DO TABULEIRO - [3,1] )!
@@ -126,100 +126,128 @@ Posicao invalida (FORA DO TABULEIRO - [1,3] )!
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [0,2]!
-79 79 88
-79 88 88
-88 79 88
+OOX
+OXX
+XOX
 JOGADOR 1 Venceu!
 Jogar novamente? (s,n)
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [0,0]!
-88 45 45
-45 45 45
-45 45 45
+X--
+---
+---
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [1,1]!
-88 45 45
-45 79 45
-45 45 45
+X--
+-O-
+---
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [1,0]!
-88 45 45
-88 79 45
-45 45 45
+X--
+XO-
+---
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [2,0]!
-88 45 45
-88 79 45
-79 45 45
+X--
+XO-
+O--
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [0,1]!
-88 88 45
-88 79 45
-79 45 45
+XX-
+XO-
+O--
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [0,2]!
-88 88 79
-88 79 45
-79 45 45
+XXO
+XO-
+O--
+JOGADOR 2 Venceu!
+Jogar novamente? (s,n)
 Jogador 1
 Digite uma posicao (x e y):
-Formato invalido!
+Jogada [0,0]!
+X--
+---
+---
+Jogador 2
+Digite uma posicao (x e y):
+Jogada [1,1]!
+X--
+-O-
+---
 Jogador 1
 Digite uma posicao (x e y):
-Posicao invalida (OCUPADA - [0,0] )!
+Jogada [1,0]!
+X--
+XO-
+---
+Jogador 2
+Digite uma posicao (x e y):
+Jogada [2,0]!
+X--
+XO-
+O--
 Jogador 1
 Digite uma posicao (x e y):
-Posicao invalida (OCUPADA - [1,1] )!
+Jogada [0,1]!
+XX-
+XO-
+O--
+Jogador 2
+Digite uma posicao (x e y):
+Jogada [0,2]!
+XXO
+XO-
+O--
+JOGADOR 2 Venceu!
+Jogar novamente? (s,n)
 Jogador 1
 Digite uma posicao (x e y):
-Posicao invalida (OCUPADA - [1,0] )!
+Jogada [1,1]!
+---
+-X-
+---
+Jogador 2
+Digite uma posicao (x e y):
+Jogada [0,0]!
+O--
+-X-
+---
 Jogador 1
 Digite uma posicao (x e y):
-Posicao invalida (OCUPADA - [2,0] )!
-Jogador 1
+Jogada [2,0]!
+O--
+-X-
+X--
+Jogador 2
 Digite uma posicao (x e y):
-Posicao invalida (OCUPADA - [0,1] )!
-Jogador 1
-Digite uma posicao (x e y):
-Posicao invalida (OCUPADA - [0,2] )!
-Jogador 1
-Digite uma posicao (x e y):
-Formato invalido!
-Jogador 1
-Digite uma posicao (x e y):
-Posicao invalida (OCUPADA - [1,1] )!
-Jogador 1
-Digite uma posicao (x e y):
-Posicao invalida (OCUPADA - [0,0] )!
-Jogador 1
-Digite uma posicao (x e y):
-Posicao invalida (OCUPADA - [2,0] )!
-Jogador 1
-Digite uma posicao (x e y):
-Posicao invalida (OCUPADA - [1,0] )!
+Jogada [1,0]!
+O--
+OX-
+X--
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,2]!
-88 88 79
-88 79 45
-79 45 88
+O--
+OX-
+X-X
 Jogador 2
 Digite uma posicao (x e y):
 Jogada [1,2]!
-88 88 79
-88 79 79
-79 45 88
+O--
+OXO
+X-X
 Jogador 1
 Digite uma posicao (x e y):
 Jogada [2,1]!
-88 88 79
-88 79 79
-79 88 88
-Sem vencedor!
+O--
+OXO
+XXX
+JOGADOR 1 Venceu!
 Jogar novamente? (s,n)

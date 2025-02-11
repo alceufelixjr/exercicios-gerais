@@ -9,7 +9,6 @@
 //     char pecaVazio;
 // } tTabuleiro;
 
-
 /**
  * Aloca e retorna uma estrutura do tipo tTabuleiro.
  * Se a alocação falhar, o programa é encerrado.
@@ -18,16 +17,31 @@
  */
 tTabuleiro* CriaTabuleiro()
 {
-    tTabuleiro *tabuleiro = (tTabuleiro *) calloc(1, sizeof(tTabuleiro));
-    tabuleiro->posicoes = (char **) calloc(TAM_TABULEIRO, sizeof(char *));
-    
-    for (int i = 0; i < TAM_TABULEIRO; i++) {
-        tabuleiro->posicoes[i] = (char *) calloc(TAM_TABULEIRO, sizeof(char));
-        for (int j = 0; j < TAM_TABULEIRO; j++) {
-            tabuleiro->posicoes[i][j] = '-';  // Inicializa todas as posições com '-'
+    tTabuleiro *tabuleiro = (tTabuleiro *) malloc (sizeof(tTabuleiro));
+    if(tabuleiro == NULL)
+        exit(1);
+    tabuleiro->posicoes = (char **) calloc (TAM_TABULEIRO,sizeof(char *));
+    if(tabuleiro->posicoes == NULL)
+        exit(1);
+    for(int i = 0; i < TAM_TABULEIRO; i++)
+    {
+        tabuleiro->posicoes[i] = (char *) calloc (TAM_TABULEIRO,sizeof(char));
+        if(tabuleiro->posicoes[i] == NULL)
+            exit(1);
+    }
+
+    tabuleiro->peca1 = 'X';
+    tabuleiro->peca2 = 'O';
+    tabuleiro->pecaVazio = '-';
+    for(int i = 0; i < TAM_TABULEIRO; i++)
+    {
+        for(int j = 0; j < TAM_TABULEIRO; j++)
+        {
+            tabuleiro->posicoes[i][j] = tabuleiro->pecaVazio;
         }
     }
     
+
     return tabuleiro;
 }
 
@@ -39,12 +53,14 @@ tTabuleiro* CriaTabuleiro()
  */
 void DestroiTabuleiro(tTabuleiro* tabuleiro)
 {
-    for(int i = 0; i < TAM_TABULEIRO; i++)
-    {
-        free(tabuleiro->posicoes[i]);
+    if(tabuleiro != NULL){
+        for(int i = 0; i < TAM_TABULEIRO; i++)
+        {
+            free(tabuleiro->posicoes[i]);
+        }
+        free(tabuleiro->posicoes);
+        free(tabuleiro);
     }
-    free(tabuleiro->posicoes);
-    free(tabuleiro);
 }
 
 
@@ -58,23 +74,12 @@ void DestroiTabuleiro(tTabuleiro* tabuleiro)
  */
 void MarcaPosicaoTabuleiro(tTabuleiro* tabuleiro, int peca, int x, int y)
 {
-    for(int i = 0; i < TAM_TABULEIRO; i++)
+    if((x >= 0 && x < TAM_TABULEIRO) && (y >= 0 && y < TAM_TABULEIRO))
     {
-        if(i == x)
-        {
-            for(int  j = 0; j < TAM_TABULEIRO; j++)
-            {
-                if(j == y)
-                {
-                    if(peca == PECA_1)
-                    {
-                        tabuleiro->posicoes[i][j] = 'X';
-                    }
-                    else if(peca == PECA_2)
-                        tabuleiro->posicoes[i][j] = 'O';
-                }
-            }
-        }
+        if(peca == PECA_1)
+            tabuleiro->posicoes[x][y] = tabuleiro->peca1;
+        else if(peca == PECA_2)
+            tabuleiro->posicoes[x][y] = tabuleiro->peca2;
     }
 }
 
@@ -88,11 +93,11 @@ void MarcaPosicaoTabuleiro(tTabuleiro* tabuleiro, int peca, int x, int y)
  */
 int TemPosicaoLivreTabuleiro(tTabuleiro* tabuleiro)
 {
-    for(int i = 0; i < TAM_TABULEIRO; i++)
+    for(int  i = 0; i < TAM_TABULEIRO; i++)
     {
         for(int j = 0; j < TAM_TABULEIRO; j++)
         {
-            if(tabuleiro->posicoes[i][j] == '-')
+            if(tabuleiro->posicoes[i][j] == tabuleiro->pecaVazio)
                 return 1;
         }
     }
@@ -112,23 +117,12 @@ int TemPosicaoLivreTabuleiro(tTabuleiro* tabuleiro)
  */
 int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro* tabuleiro, int x, int y, int peca)
 {
-    for(int i = 0; i < TAM_TABULEIRO; i++)
+    if((x >= 0 && x < TAM_TABULEIRO) && (y >= 0 && y < TAM_TABULEIRO))
     {
-        if(i == x)
-        {
-            for(int  j = 0; j < TAM_TABULEIRO; j++)
-            {
-                if(j == y)
-                {
-                    if(peca == PECA_1)
-                        if(tabuleiro->posicoes[i][j] == 'X')
-                            return 1;
-                    else if(peca == PECA_2)
-                        if(tabuleiro->posicoes[i][j] == 'O')
-                            return 1;
-                }
-            }
-        }
+        if(tabuleiro->posicoes[x][y] == 'X' && peca == PECA_1)
+            return 1;
+        else if(tabuleiro->posicoes[x][y] == 'O' && peca == PECA_2)
+            return 1;
     }
     return 0;
 }
@@ -145,19 +139,10 @@ int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro* tabuleiro, int x, int y, int pec
  */
 int EstaLivrePosicaoTabuleiro(tTabuleiro* tabuleiro, int x, int y)
 {
-    for(int i = 0; i < TAM_TABULEIRO; i++)
+    if((x >= 0 && x < TAM_TABULEIRO) && (y >= 0 && y < TAM_TABULEIRO))
     {
-        if(i == x)
-        {
-            for(int  j = 0; j < TAM_TABULEIRO; j++)
-            {
-                if(j == y)
-                {
-                    if(tabuleiro->posicoes[i][j] == '-')
-                        return 1;
-                }
-            }
-        }
+        if(tabuleiro->posicoes[x][y] == tabuleiro->pecaVazio)
+            return 1;
     }
     return 0;
 }
@@ -173,7 +158,7 @@ int EstaLivrePosicaoTabuleiro(tTabuleiro* tabuleiro, int x, int y)
  */
 int EhPosicaoValidaTabuleiro(int x, int y)
 {
-    return(x < TAM_TABULEIRO && y < TAM_TABULEIRO);
+    return ((x >= 0 && x < TAM_TABULEIRO) && (y >= 0 && y < TAM_TABULEIRO));
 }
 
 
@@ -188,14 +173,10 @@ void ImprimeTabuleiro(tTabuleiro* tabuleiro)
     {
         for(int j = 0; j < TAM_TABULEIRO; j++)
         {
-            if(j == TAM_TABULEIRO-1)
-            {
-                printf("%d\n",tabuleiro->posicoes[i][j]);
-            }
-            else
-            {
-                printf("%d ",tabuleiro->posicoes[i][j]);
-            }
+                printf("%c",tabuleiro->posicoes[i][j]);
         }
-    }    
+        printf("\n");
+    }
 }
+
+

@@ -1,5 +1,5 @@
-Arquivos Esperados Corretos: 8 de 9
-Pastas Compiladas Corretamente: 5 de 6 
+Arquivos Esperados Corretos: 7 de 9
+Pastas Compiladas Corretamente: 4 de 6 
 Pastas Linkadas Corretamente: 3 de 6
 Teste main
   - Resultados corretos: 0 de 6
@@ -14,9 +14,9 @@ Teste data
   - Valgrinds corretos: 6 de 6
 Nota de alceu-felix para o teste data: 1.67
 Teste paciente
-  - Resultados corretos: 6 de 6
-  - Valgrinds corretos: 6 de 6
-Nota de alceu-felix para o teste paciente: 1.67
+  - Resultados corretos: 1 de 6
+  - Valgrinds corretos: 1 de 6
+Nota de alceu-felix para o teste paciente: .26
 Teste pad
   - Resultados corretos: 0 de 6
   - Valgrinds corretos: 0 de 6
@@ -25,5 +25,5 @@ Teste lesao
   - Resultados corretos: 6 de 6
   - Valgrinds corretos: 6 de 6
 Nota de alceu-felix para o teste lesao: 1.67
-Nota de alceu-felix: 0+(1.67)+(1.67)+(0)+(0)+(0)+(1.67)
-Nota de alceu-felix: 5.01
+Nota de alceu-felix: 0+(.26)+(1.67)+(0)+(0)+(0)+(1.67)
+Nota de alceu-felix: 3.60

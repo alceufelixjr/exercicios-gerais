@@ -1,0 +1,53 @@
+==89325== Memcheck, a memory error detector
+==89325== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==89325== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==89325== Command: Resultados/alceu-felix/eleicao/prog Resultados/alceu-felix/eleicao/Casos/5
+==89325== Parent PID: 89324
+==89325== 
+==89325== Invalid write of size 8
+==89325==    at 0x1095B1: InicializaEleicao (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
+==89325==    by 0x109AF3: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
+==89325==  Address 0x4aa80c8 is 0 bytes after a block of size 8 alloc'd
+==89325==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89325==    by 0x1094BD: InicializaEleicao (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
+==89325==    by 0x109AF3: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
+==89325== 
+==89325== Invalid write of size 8
+==89325==    at 0x1095F3: InicializaEleicao (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
+==89325==    by 0x109AF3: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
+==89325==  Address 0x4aa8118 is 0 bytes after a block of size 8 alloc'd
+==89325==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==89325==    by 0x1094D1: InicializaEleicao (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
+==89325==    by 0x109AF3: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
+==89325== 
+==89325== Invalid read of size 8
+==89325==    at 0x10979B: RealizaEleicao (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
+==89325==    by 0x109B03: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
+==89325==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==89325== 
+==89325== 
+==89325== Process terminating with default action of signal 11 (SIGSEGV)
+==89325==  Access not within mapped region at address 0x0
+==89325==    at 0x10979B: RealizaEleicao (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
+==89325==    by 0x109B03: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
+==89325==  If you believe this happened as a result of a stack
+==89325==  overflow in your program's main thread (unlikely but
+==89325==  possible), you can try to increase the size of the
+==89325==  main thread stack using the --main-stacksize= flag.
+==89325==  The main thread stack size used in this run was 8388608.
+==89325== 
+==89325== HEAP SUMMARY:
+==89325==     in use at exit: 4,176 bytes in 4 blocks
+==89325==   total heap usage: 22 allocs, 18 frees, 4,620 bytes allocated
+==89325== 
+==89325== LEAK SUMMARY:
+==89325==    definitely lost: 0 bytes in 0 blocks
+==89325==    indirectly lost: 0 bytes in 0 blocks
+==89325==      possibly lost: 0 bytes in 0 blocks
+==89325==    still reachable: 4,176 bytes in 4 blocks
+==89325==         suppressed: 0 bytes in 0 blocks
+==89325== Reachable blocks (those to which a pointer was found) are not shown.
+==89325== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==89325== 
+==89325== For lists of detected and suppressed errors, rerun with: -s
+==89325== ERROR SUMMARY: 5 errors from 3 contexts (suppressed: 0 from 0)

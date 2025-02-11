@@ -12,7 +12,7 @@
  */
 tData* LeData()
 {
-    tData *d = (tData *) calloc(1,sizeof(tData));
+    tData *d = (tData *) malloc (sizeof(tData));
     scanf("%d/%d/%d\n",&d->dia,&d->mes,&d->ano);
 
     return d;
@@ -27,7 +27,7 @@ tData* LeData()
  */
 tData* CriaData(int dia, int mes, int ano)
 {
-    tData *d = (tData *) calloc(1,sizeof(tData));
+    tData *d = (tData *) malloc (sizeof(tData));
     d->dia = dia;
     d->mes = mes;
     d->ano = ano;
@@ -41,8 +41,7 @@ tData* CriaData(int dia, int mes, int ano)
  */
 void LiberaData(tData* d)
 {
-    if(d != NULL)
-        free(d);
+    free(d);
 }
 
 /**
@@ -54,10 +53,10 @@ void LiberaData(tData* d)
 int CalculaIdadeData(tData* nascimento, tData* diacalc)
 {
     int diff = diacalc->ano - nascimento->ano;
-    if(diacalc->mes < nascimento->mes || (diacalc->mes == nascimento->mes && diacalc->dia < nascimento->dia))
+    if((nascimento-> mes > diacalc->mes) || (nascimento->mes == diacalc->mes && nascimento->dia > diacalc->dia))
         diff--;
     return diff;
-}
+}   
 
 /**
  * @brief Imprime uma data na saída padrão.

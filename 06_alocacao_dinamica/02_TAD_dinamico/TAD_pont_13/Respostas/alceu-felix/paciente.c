@@ -43,9 +43,12 @@ int GetQtdLesoesPaciente(tPaciente* p)
 int GetQtdCirurgiasPaciente(tPaciente* p)
 {
     int qtdCirurgias = 0;
-    for(int i = 0; i < p->qtdLesoes; i++)
+    for(int i = 0;i < p->qtdLesoes; i++)
     {
-        qtdCirurgias += PrecisaCirurgiaLesao(p->listaLesao[i]);
+        if(PrecisaCirurgiaLesao(p->listaLesao[i]))
+        {
+            qtdCirurgias++;
+        }
     }
     return qtdCirurgias;
 }
@@ -62,17 +65,19 @@ tData* GetNascimentoPaciente(tPaciente* p)
 }
 
 /**
+ * 
  * @brief Cria uma estrutura do tipo tPaciente
  * 
  * @return Retorna um ponteiro para a estrutura de dados tPaciente
+ * 
  */
 tPaciente* CriaPaciente()
 {
-    tPaciente *p = (tPaciente *) calloc (1,sizeof(tPaciente));
-    p->nome = (char *) calloc (TAM_NOME,sizeof(char));
-    // p->nascimento = CriaData();
-    p->cartaoSus = (char *) calloc (TAM_CSUS,sizeof(char));
-    p->listaLesao = (tLesao **) calloc (1,sizeof(tLesao *));
+    tPaciente *p = (tPaciente *) malloc (sizeof(tPaciente));
+    p->nome = (char *) malloc (sizeof(char)*TAM_NOME);
+    //p->nascimento = CriaData();
+    p->cartaoSus = (char *) malloc (sizeof(char)*TAM_CSUS);
+    p->listaLesao = (tLesao **) malloc (sizeof(tLesao*));
 
     return p;
 }
@@ -88,7 +93,6 @@ void LePaciente(tPaciente* p)
     p->nascimento = LeData();
     scanf("%[^\n]\n",p->cartaoSus);
     scanf("%c\n",&p->genero);
-    p->qtdLesoes = 0;
     p->maxLesoes = QTD_LESAO;
 }
 
@@ -121,12 +125,13 @@ void LiberaPaciente(tPaciente* p)
     {
         for(int i = 0; i < p->qtdLesoes; i++)
         {
-            LiberaLesao(p->listaLesao[i]);
+            free(p->listaLesao[i]);
         }
         free(p->listaLesao);
-        free(p->cartaoSus);
         free(p->nome);
+        // free(p->nascimento); USA LIBERADATA NAO FREE NO p->NASCIMENTO
         LiberaData(p->nascimento);
+        free(p->cartaoSus);
         free(p);
     }
 }
@@ -140,10 +145,6 @@ void LiberaPaciente(tPaciente* p)
 */
 void AdicionaLesaoPaciente(tPaciente* p, tLesao* l)
 {
-    if(p->qtdLesoes < p->maxLesoes)
-    {
-        p->listaLesao[p->qtdLesoes] = l;
-        p->qtdLesoes++;
-    }
+    p->listaLesao[p->qtdLesoes] = l;
 }
 
