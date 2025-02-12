@@ -2,9 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TAM_MAX_NOME 20
-#define TAM_MAX_PARTIDO 40
-
 // typedef struct {
 //     char* nome;
 //     char* partido;
@@ -13,6 +10,9 @@
 //     int votos;
 // } tCandidato;
 
+#define TAM_MAX_NOME 30
+#define TAM_MAX_PARTIDO 40
+
 /**
  * @brief Cria um candidato "vazio".
  * Os ponteiros devem ser inicializados com NULL e os campos numéricos com o valor -1.
@@ -20,13 +20,13 @@
  */
 tCandidato* CriaCandidato()
 {
-    tCandidato *candidato = (tCandidato *) calloc (1,sizeof(tCandidato));
+    tCandidato *candidato = (tCandidato *) malloc (sizeof(tCandidato));
     candidato->nome = NULL;
     candidato->partido = NULL;
     candidato->id = -1;
     candidato->votos = -1;
 
-    return(candidato);
+    return candidato;
 }
 
 /**
@@ -36,9 +36,12 @@ tCandidato* CriaCandidato()
  */
 void ApagaCandidato(tCandidato* candidato)
 {
-    free(candidato->nome);
-    free(candidato->partido);
-    free(candidato);
+    if(candidato != NULL)
+    {
+        free(candidato->nome);
+        free(candidato->partido);
+        free(candidato);
+    }
 }
 
 /**
@@ -47,11 +50,10 @@ void ApagaCandidato(tCandidato* candidato)
  */
 void LeCandidato(tCandidato *candidato)
 {
-    candidato->nome = (char *) realloc (candidato->nome,sizeof(char)*TAM_MAX_NOME);
-    candidato->partido = (char *) realloc (candidato->partido,sizeof(char)*TAM_MAX_PARTIDO);
-    scanf("%[^,], %[^,], %c, %d\n",candidato->nome,candidato->partido,&candidato->cargo,&candidato->id);
+    candidato->nome = (char *) calloc (TAM_MAX_NOME,sizeof(char));
+    candidato->partido = (char *) calloc (TAM_MAX_PARTIDO,sizeof(char));
+    scanf(" %[^,], %[^,], %c, %d\n",candidato->nome,candidato->partido,&candidato->cargo,&candidato->id);
     candidato->votos = 0;
-    
 }
 
 /**
@@ -113,7 +115,7 @@ int ObtemVotos(tCandidato* candidato)
  */
 float CalculaPercentualVotos(tCandidato* candidato, int totalVotos)
 {
-    return((candidato->votos/(float) totalVotos)*100);
+    return((candidato->votos/(float)totalVotos)*100);
 }
 
 /**
@@ -123,7 +125,6 @@ float CalculaPercentualVotos(tCandidato* candidato, int totalVotos)
  */
 void ImprimeCandidato (tCandidato* candidato, float percentualVotos)
 {
-    
     printf("%s (%s), %d voto(s), %.2f%%\n",candidato->nome,candidato->partido,candidato->votos,percentualVotos);
 }
 

@@ -10,16 +10,16 @@ Teste completo
   - Valgrinds corretos: 0 de 10
 Nota de alceu-felix para o teste completo: 0
 Teste eleicao
-  - Resultados corretos: 0 de 10
-  - Valgrinds corretos: 0 de 10
-Nota de alceu-felix para o teste eleicao: 0
-Teste candidato
-  - Resultados corretos: 7 de 10
+  - Resultados corretos: 3 de 10
   - Valgrinds corretos: 10 de 10
-Nota de alceu-felix para o teste candidato: 1.40
+Nota de alceu-felix para o teste eleicao: .60
+Teste candidato
+  - Resultados corretos: 10 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de alceu-felix para o teste candidato: 2.00
 Teste eleitor
   - Resultados corretos: 10 de 10
   - Valgrinds corretos: 10 de 10
 Nota de alceu-felix para o teste eleitor: 2.00
-Nota de alceu-felix: 0+(2.00)+(0)+(0)+(0)+(1.40)
-Nota de alceu-felix: 3.40
+Nota de alceu-felix: 0+(2.00)+(.60)+(0)+(0)+(2.00)
+Nota de alceu-felix: 4.60

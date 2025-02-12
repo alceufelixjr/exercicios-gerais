@@ -1,79 +1,15 @@
-==51965== Memcheck, a memory error detector
-==51965== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==51965== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==51965== Command: Resultados/alceu-felix/paciente/prog Resultados/alceu-felix/paciente/Casos/6
-==51965== Parent PID: 51964
-==51965== 
-==51965== Use of uninitialised value of size 8
-==51965==    at 0x109879: AdicionaLesaoPaciente (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109A3C: RodaPad (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x10956D: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965== 
-==51965== Conditional jump or move depends on uninitialised value(s)
-==51965==    at 0x48D30BB: __printf_buffer (vfprintf-process-arg.c:58)
-==51965==    by 0x48D472A: __vfprintf_internal (vfprintf-internal.c:1544)
-==51965==    by 0x48C91A2: printf (printf.c:33)
-==51965==    by 0x109C9E: ImprimeRelatorioPad (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109579: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965== 
-==51965== Use of uninitialised value of size 8
-==51965==    at 0x48C80AB: _itoa_word (_itoa.c:183)
-==51965==    by 0x48D2C8B: __printf_buffer (vfprintf-process-arg.c:155)
-==51965==    by 0x48D472A: __vfprintf_internal (vfprintf-internal.c:1544)
-==51965==    by 0x48C91A2: printf (printf.c:33)
-==51965==    by 0x109C9E: ImprimeRelatorioPad (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109579: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965== 
-==51965== Conditional jump or move depends on uninitialised value(s)
-==51965==    at 0x48C80BC: _itoa_word (_itoa.c:183)
-==51965==    by 0x48D2C8B: __printf_buffer (vfprintf-process-arg.c:155)
-==51965==    by 0x48D472A: __vfprintf_internal (vfprintf-internal.c:1544)
-==51965==    by 0x48C91A2: printf (printf.c:33)
-==51965==    by 0x109C9E: ImprimeRelatorioPad (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109579: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965== 
-==51965== Conditional jump or move depends on uninitialised value(s)
-==51965==    at 0x48D2D75: __printf_buffer (vfprintf-process-arg.c:186)
-==51965==    by 0x48D472A: __vfprintf_internal (vfprintf-internal.c:1544)
-==51965==    by 0x48C91A2: printf (printf.c:33)
-==51965==    by 0x109C9E: ImprimeRelatorioPad (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109579: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965== 
-==51965== Conditional jump or move depends on uninitialised value(s)
-==51965==    at 0x10960E: GetQtdCirurgiasPaciente (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109C1B: CalcTotalCirurgiasPad (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109CAA: ImprimeRelatorioPad (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109579: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965== 
-==51965== Conditional jump or move depends on uninitialised value(s)
-==51965==    at 0x10972E: ImprimePaciente (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109B8B: ImprimeListaPacientesPad (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109CCC: ImprimeRelatorioPad (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109579: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965== 
-==51965== Conditional jump or move depends on uninitialised value(s)
-==51965==    at 0x1097FD: LiberaPaciente (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109A99: LiberaPad (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x109585: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965== 
-==51965== 
-==51965== HEAP SUMMARY:
-==51965==     in use at exit: 242 bytes in 4 blocks
-==51965==   total heap usage: 17 allocs, 13 frees, 9,683 bytes allocated
-==51965== 
-==51965== 242 (32 direct, 210 indirect) bytes in 1 blocks are definitely lost in loss record 4 of 4
-==51965==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==51965==    by 0x1093FC: CriaLesao (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x1099FB: RodaPad (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965==    by 0x10956D: main (in /home/Aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_13/Resultados/alceu-felix/paciente/prog)
-==51965== 
-==51965== LEAK SUMMARY:
-==51965==    definitely lost: 32 bytes in 1 blocks
-==51965==    indirectly lost: 210 bytes in 3 blocks
-==51965==      possibly lost: 0 bytes in 0 blocks
-==51965==    still reachable: 0 bytes in 0 blocks
-==51965==         suppressed: 0 bytes in 0 blocks
-==51965== 
-==51965== Use --track-origins=yes to see where uninitialised values come from
-==51965== For lists of detected and suppressed errors, rerun with: -s
-==51965== ERROR SUMMARY: 9 errors from 9 contexts (suppressed: 0 from 0)
+==37362== Memcheck, a memory error detector
+==37362== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==37362== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==37362== Command: Resultados/alceu-felix/paciente/prog Resultados/alceu-felix/paciente/Casos/6
+==37362== Parent PID: 37361
+==37362== 
+==37362== 
+==37362== HEAP SUMMARY:
+==37362==     in use at exit: 0 bytes in 0 blocks
+==37362==   total heap usage: 17 allocs, 17 frees, 9,683 bytes allocated
+==37362== 
+==37362== All heap blocks were freed -- no leaks are possible
+==37362== 
+==37362== For lists of detected and suppressed errors, rerun with: -s
+==37362== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

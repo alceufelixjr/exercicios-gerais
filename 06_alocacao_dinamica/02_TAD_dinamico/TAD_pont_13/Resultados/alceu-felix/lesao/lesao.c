@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 // typedef struct lesao{
 //     char * id; /**< O identificador da lesão. */
 //     char * diagnostico; /**< O diagnóstico da lesão. */
@@ -46,12 +47,11 @@ void LiberaLesao(tLesao* l)
 {
     if(l != NULL)
     {
-        free(l->diagnostico);
         free(l->id);
+        free(l->diagnostico);
         free(l->regiao_corpo);
         free(l);
     }
-    
 }
 
 /**

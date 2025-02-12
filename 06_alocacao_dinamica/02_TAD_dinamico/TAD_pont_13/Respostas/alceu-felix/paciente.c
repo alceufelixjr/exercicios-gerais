@@ -42,15 +42,12 @@ int GetQtdLesoesPaciente(tPaciente* p)
  */
 int GetQtdCirurgiasPaciente(tPaciente* p)
 {
-    int qtdCirurgias = 0;
-    for(int i = 0;i < p->qtdLesoes; i++)
-    {
-        if(PrecisaCirurgiaLesao(p->listaLesao[i]))
-        {
-            qtdCirurgias++;
-        }
+    int qtdCir = 0;
+    for(int  i = 0; i < p->qtdLesoes; i++)
+    {   
+        qtdCir += PrecisaCirurgiaLesao(p->listaLesao[i]);
     }
-    return qtdCirurgias;
+    return qtdCir;
 }
 
 /**
@@ -65,20 +62,19 @@ tData* GetNascimentoPaciente(tPaciente* p)
 }
 
 /**
- * 
  * @brief Cria uma estrutura do tipo tPaciente
  * 
  * @return Retorna um ponteiro para a estrutura de dados tPaciente
- * 
  */
 tPaciente* CriaPaciente()
 {
     tPaciente *p = (tPaciente *) malloc (sizeof(tPaciente));
     p->nome = (char *) malloc (sizeof(char)*TAM_NOME);
-    //p->nascimento = CriaData();
+    // p->nascimento = CriaData();
     p->cartaoSus = (char *) malloc (sizeof(char)*TAM_CSUS);
-    p->listaLesao = (tLesao **) malloc (sizeof(tLesao*));
-
+    p->listaLesao = (tLesao**) malloc (sizeof(tLesao*));
+    p->qtdLesoes = 0;
+    p->maxLesoes = QTD_LESAO;
     return p;
 }
 
@@ -93,7 +89,6 @@ void LePaciente(tPaciente* p)
     p->nascimento = LeData();
     scanf("%[^\n]\n",p->cartaoSus);
     scanf("%c\n",&p->genero);
-    p->maxLesoes = QTD_LESAO;
 }
 
 /**
@@ -105,13 +100,14 @@ void ImprimePaciente(tPaciente* p)
 {
     if(p->qtdLesoes > 0)
     {
-        printf(" - %s - ",p->nome);
-        for(int i = 0; i < p->qtdLesoes; i++)
+        printf("- %s - ",p->nome);
+        for(int  i = 0; i < p->qtdLesoes; i++)
         {
             printf("%s ",GetIdLesao(p->listaLesao[i]));
         }
         printf("\n");
     }
+    
 }
 
 /**
@@ -123,19 +119,17 @@ void LiberaPaciente(tPaciente* p)
 {
     if(p != NULL)
     {
-        for(int i = 0; i < p->qtdLesoes; i++)
+        free(p->nome);
+        free(p->cartaoSus);
+        for(int i = 0; i < p->qtdLesoes;i++)
         {
-            free(p->listaLesao[i]);
+            LiberaLesao(p->listaLesao[i]);
         }
         free(p->listaLesao);
-        free(p->nome);
-        // free(p->nascimento); USA LIBERADATA NAO FREE NO p->NASCIMENTO
         LiberaData(p->nascimento);
-        free(p->cartaoSus);
         free(p);
     }
 }
-
 
 /**
  * @brief Adiciona uma lesão à lista de lesões do paciente.
@@ -145,6 +139,11 @@ void LiberaPaciente(tPaciente* p)
 */
 void AdicionaLesaoPaciente(tPaciente* p, tLesao* l)
 {
-    p->listaLesao[p->qtdLesoes] = l;
+    if(p->qtdLesoes < p->maxLesoes)
+    {
+        p->listaLesao[p->qtdLesoes] = l;
+        p->qtdLesoes++;
+    }
+    
 }
 

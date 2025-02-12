@@ -176,18 +176,18 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta data / Caso 2:
  - Arquivo de output gerado: Resultados/alceu-felix/data/Casos/2/result_valgrind.txt.
  - Valgrind: Ok! allocs: 13, frees: 13, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta data / Caso 3:
  - Arquivo de output gerado: Resultados/alceu-felix/data/Casos/3/result_valgrind.txt.
  - Valgrind: Ok! allocs: 18, frees: 18, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta data / Caso 4:
  - Arquivo de output gerado: Resultados/alceu-felix/data/Casos/4/result_valgrind.txt.
  - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta data / Caso 5:
  - Arquivo de output gerado: Resultados/alceu-felix/data/Casos/5/result_valgrind.txt.
  - Valgrind: Ok! allocs: 4, frees: 4, errors: 0 | Desconto do valgrind: 0.0%
@@ -196,30 +196,30 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta data / Caso 6:
  - Arquivo de output gerado: Resultados/alceu-felix/data/Casos/6/result_valgrind.txt.
  - Valgrind: Ok! allocs: 17, frees: 17, errors: 0 | Desconto do valgrind: 0.0%
- - Resultado para o saida.txt: Ok! Peso: 10
- - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
- - Nota para a pasta data (máximo 1.67) - 60.00 de 60 - 100.00% de 1.67: 1.67.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta data (máximo 1.67) - 20.00 de 60 - 33.00% de 1.67: .55.
  -----
  - Pasta paciente / Caso 1:
  - Arquivo de output gerado: Resultados/alceu-felix/paciente/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 36, frees: 24, errors: 20 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 36, frees: 36, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta paciente / Caso 2:
  - Arquivo de output gerado: Resultados/alceu-felix/paciente/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 13, frees: 9, errors: 9 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 13, frees: 13, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta paciente / Caso 3:
  - Arquivo de output gerado: Resultados/alceu-felix/paciente/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 18, frees: 14, errors: 12 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 18, frees: 18, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta paciente / Caso 4:
  - Arquivo de output gerado: Resultados/alceu-felix/paciente/Casos/4/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 27, frees: 23, errors: 15 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta paciente / Caso 5:
  - Arquivo de output gerado: Resultados/alceu-felix/paciente/Casos/5/result_valgrind.txt.
  - Valgrind: Ok! allocs: 4, frees: 4, errors: 0 | Desconto do valgrind: 0.0%
@@ -227,10 +227,10 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta paciente / Caso 6:
  - Arquivo de output gerado: Resultados/alceu-felix/paciente/Casos/6/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 17, frees: 13, errors: 9 | Desconto do valgrind 50.00%
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
- - Nota para a pasta paciente (máximo 1.67) - 10.00 de 60 - 16.00% de 1.67: .26.
+ - Valgrind: Ok! allocs: 17, frees: 17, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta paciente (máximo 1.67) - 60.00 de 60 - 100.00% de 1.67: 1.67.
  -----
  - Pasta pad / Caso 1:
  - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
@@ -309,13 +309,13 @@ Aluno: alceu-felix
  - Valgrinds corretos: 0 de 6
  - Nota de alceu-felix para o teste completo: 0
  - Teste data
+ - Resultados corretos: 2 de 6
+ - Valgrinds corretos: 6 de 6
+ - Nota de alceu-felix para o teste data: .55
+ - Teste paciente
  - Resultados corretos: 6 de 6
  - Valgrinds corretos: 6 de 6
- - Nota de alceu-felix para o teste data: 1.67
- - Teste paciente
- - Resultados corretos: 1 de 6
- - Valgrinds corretos: 1 de 6
- - Nota de alceu-felix para o teste paciente: .26
+ - Nota de alceu-felix para o teste paciente: 1.67
  - Teste pad
  - Resultados corretos: 0 de 6
  - Valgrinds corretos: 0 de 6
@@ -324,8 +324,8 @@ Aluno: alceu-felix
  - Resultados corretos: 6 de 6
  - Valgrinds corretos: 6 de 6
  - Nota de alceu-felix para o teste lesao: 1.67
- - Nota de alceu-felix: 0+(.26)+(1.67)+(0)+(0)+(0)+(1.67)
- - Nota de alceu-felix: 3.60
+ - Nota de alceu-felix: 0+(1.67)+(1.67)+(0)+(0)+(0)+(.55)
+ - Nota de alceu-felix: 3.89
 
 ----------------------------------------------------------------------------
 

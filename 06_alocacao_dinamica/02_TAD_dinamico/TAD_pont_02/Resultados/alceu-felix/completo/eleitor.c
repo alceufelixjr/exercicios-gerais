@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 // typedef struct{
 //     int id;
 //     int votoP;
@@ -16,10 +15,10 @@
  */
 tEleitor* CriaEleitor()
 {
-    tEleitor *eleitor = (tEleitor *) malloc (sizeof(tEleitor));
-    eleitor->id =  -1;
-    eleitor->votoP = -1;
+    tEleitor * eleitor = (tEleitor *) malloc (sizeof(tEleitor));
+    eleitor->id = -1;
     eleitor->votoG = -1;
+    eleitor->votoP = -1;
 
     return eleitor;
 }
@@ -30,8 +29,7 @@ tEleitor* CriaEleitor()
  */
 void ApagaEleitor(tEleitor* eleitor)
 {
-    if(eleitor != NULL)
-        free(eleitor);
+    free(eleitor);
 }
 
 /**

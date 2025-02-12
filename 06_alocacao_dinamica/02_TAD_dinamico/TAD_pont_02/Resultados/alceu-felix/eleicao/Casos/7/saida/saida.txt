@@ -1,1 +1,1 @@
-timeout: the monitored command dumped core
+ELEICAO ANULADA

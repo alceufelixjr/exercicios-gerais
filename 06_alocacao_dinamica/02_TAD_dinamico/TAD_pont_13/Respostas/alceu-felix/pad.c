@@ -14,10 +14,10 @@
  */
 tPad* CriaPad()
 {
-    tPad *p = (tPad *) malloc (sizeof(tPad));
-    p->listapacientes[100] = (tPaciente *) malloc (sizeof(tPaciente)); 
+    tPad *pd = (tPad*) malloc (sizeof(tPad));
+    pd->qtdpacientes = 0;
 
-    return p;
+    return pd;
 }
 
 /**
@@ -28,24 +28,34 @@ tPad* CriaPad()
 void RodaPad(tPad *p)
 {
     char op;
-    int qtdPacientes = 0;
 
     while(1)
     {
         scanf("%c\n",&op);
-        if(op == 'P' && qtdPacientes < 100)
+        if(op == 'P')
         {
-            LePaciente(p->listapacientes[qtdPacientes]);
-            qtdPacientes++;            
+            tPaciente *pac = CriaPaciente();
+            LePaciente(pac);
+            
+            if(p->qtdpacientes < 100)
+            {
+                p->listapacientes[p->qtdpacientes] = pac;
+                p->qtdpacientes++;
+            }
         }
         else if(op == 'L')
         {
-            tLesao *lesao = (tLesao *) malloc (sizeof(tLesao)); 
-            LeLesao(lesao);
+            tLesao *les = CriaLesao();
+            LeLesao(les);
         }
-        else if(op == 'F')
+        else if(op == 'F'){}
+        else
+        {
+            printf("ERRO!\n");
             exit(1);
+        }
     }
+
 }
 
 /**
@@ -60,12 +70,4 @@ void ImprimeRelatorioPad(tPad *p);
  * 
  * @param p Ponteiro para a estrutura de dados tPad a ser liberada.
  */
-void LiberaPad(tPad *p)
-{
-    for(int i = 0; i < 100; i++)
-    {
-        free(p->listapacientes[i]);
-    }
-    free(p);
-}
-
+void LiberaPad(tPad *p);

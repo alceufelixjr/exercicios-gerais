@@ -41,7 +41,8 @@ tData* CriaData(int dia, int mes, int ano)
  */
 void LiberaData(tData* d)
 {
-    free(d);
+    if(d != NULL)
+        free(d);
 }
 
 /**
@@ -53,10 +54,14 @@ void LiberaData(tData* d)
 int CalculaIdadeData(tData* nascimento, tData* diacalc)
 {
     int diff = diacalc->ano - nascimento->ano;
-    if((nascimento-> mes > diacalc->mes) || (nascimento->mes == diacalc->mes && nascimento->dia > diacalc->dia))
+    
+    if((nascimento->mes < diacalc->mes) || ((nascimento->mes == diacalc->mes) && (nascimento->dia < diacalc->dia)))
+    {
         diff--;
+    }
+
     return diff;
-}   
+}
 
 /**
  * @brief Imprime uma data na saída padrão.
@@ -64,6 +69,5 @@ int CalculaIdadeData(tData* nascimento, tData* diacalc)
  */
 void ImprimeData(tData* d)
 {
-    printf("%d/%d/%d\n",d->dia,d->mes,d->ano);
+    printf("%02d/%02d/%04d",d->dia,d->mes,d->ano);
 }
-

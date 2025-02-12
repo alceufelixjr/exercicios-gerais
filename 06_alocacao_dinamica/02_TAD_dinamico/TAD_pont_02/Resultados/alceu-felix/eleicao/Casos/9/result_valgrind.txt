@@ -1,53 +1,15 @@
-==90355== Memcheck, a memory error detector
-==90355== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==90355== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==90355== Command: Resultados/alceu-felix/eleicao/prog Resultados/alceu-felix/eleicao/Casos/9
-==90355== Parent PID: 90354
-==90355== 
-==90355== Invalid write of size 8
-==90355==    at 0x1095F3: InicializaEleicao (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
-==90355==    by 0x109AF3: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
-==90355==  Address 0x4aa8118 is 0 bytes after a block of size 8 alloc'd
-==90355==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==90355==    by 0x1094D1: InicializaEleicao (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
-==90355==    by 0x109AF3: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
-==90355== 
-==90355== Invalid write of size 8
-==90355==    at 0x1095B1: InicializaEleicao (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
-==90355==    by 0x109AF3: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
-==90355==  Address 0x4aa80c8 is 0 bytes after a block of size 8 alloc'd
-==90355==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==90355==    by 0x1094BD: InicializaEleicao (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
-==90355==    by 0x109AF3: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
-==90355== 
-==90355== Invalid read of size 8
-==90355==    at 0x10979B: RealizaEleicao (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
-==90355==    by 0x109B03: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
-==90355==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
-==90355== 
-==90355== 
-==90355== Process terminating with default action of signal 11 (SIGSEGV)
-==90355==  Access not within mapped region at address 0x0
-==90355==    at 0x10979B: RealizaEleicao (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
-==90355==    by 0x109B03: main (in /home-temp/aluno/Desktop/exercicios-gerais/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_02/Resultados/alceu-felix/eleicao/prog)
-==90355==  If you believe this happened as a result of a stack
-==90355==  overflow in your program's main thread (unlikely but
-==90355==  possible), you can try to increase the size of the
-==90355==  main thread stack using the --main-stacksize= flag.
-==90355==  The main thread stack size used in this run was 8388608.
-==90355== 
-==90355== HEAP SUMMARY:
-==90355==     in use at exit: 4,176 bytes in 4 blocks
-==90355==   total heap usage: 22 allocs, 18 frees, 4,620 bytes allocated
-==90355== 
-==90355== LEAK SUMMARY:
-==90355==    definitely lost: 0 bytes in 0 blocks
-==90355==    indirectly lost: 0 bytes in 0 blocks
-==90355==      possibly lost: 0 bytes in 0 blocks
-==90355==    still reachable: 4,176 bytes in 4 blocks
-==90355==         suppressed: 0 bytes in 0 blocks
-==90355== Reachable blocks (those to which a pointer was found) are not shown.
-==90355== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==90355== 
-==90355== For lists of detected and suppressed errors, rerun with: -s
-==90355== ERROR SUMMARY: 5 errors from 3 contexts (suppressed: 0 from 0)
+==107405== Memcheck, a memory error detector
+==107405== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==107405== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==107405== Command: Resultados/alceu-felix/eleicao/prog Resultados/alceu-felix/eleicao/Casos/9
+==107405== Parent PID: 107404
+==107405== 
+==107405== 
+==107405== HEAP SUMMARY:
+==107405==     in use at exit: 0 bytes in 0 blocks
+==107405==   total heap usage: 5 allocs, 5 frees, 4,256 bytes allocated
+==107405== 
+==107405== All heap blocks were freed -- no leaks are possible
+==107405== 
+==107405== For lists of detected and suppressed errors, rerun with: -s
+==107405== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

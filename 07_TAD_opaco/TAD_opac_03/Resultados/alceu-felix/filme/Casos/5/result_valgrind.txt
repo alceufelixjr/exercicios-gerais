@@ -1,0 +1,15 @@
+==64400== Memcheck, a memory error detector
+==64400== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==64400== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==64400== Command: Resultados/alceu-felix/filme/prog Resultados/alceu-felix/filme/Casos/5
+==64400== Parent PID: 64399
+==64400== 
+==64400== 
+==64400== HEAP SUMMARY:
+==64400==     in use at exit: 0 bytes in 0 blocks
+==64400==   total heap usage: 9 allocs, 9 frees, 8,336 bytes allocated
+==64400== 
+==64400== All heap blocks were freed -- no leaks are possible
+==64400== 
+==64400== For lists of detected and suppressed errors, rerun with: -s
+==64400== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
