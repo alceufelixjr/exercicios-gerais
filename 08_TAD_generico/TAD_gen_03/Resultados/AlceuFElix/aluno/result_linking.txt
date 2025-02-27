@@ -1,0 +1,8 @@
+/usr/bin/ld: Resultados/AlceuFElix/aluno/main.o: in function `main':
+main.c:(.text+0x53): undefined reference to `CriaAluno'
+/usr/bin/ld: main.c:(.text+0x63): undefined reference to `LeAluno'
+/usr/bin/ld: main.c:(.text+0x99): undefined reference to `DestroiAluno'
+/usr/bin/ld: Resultados/AlceuFElix/aluno/relatorio.o: in function `ImprimeRelatorio':
+relatorio.c:(.text+0x5b): undefined reference to `GetGeneroAluno'
+/usr/bin/ld: relatorio.c:(.text+0x86): undefined reference to `GetNotaAluno'
+collect2: error: ld returned 1 exit status

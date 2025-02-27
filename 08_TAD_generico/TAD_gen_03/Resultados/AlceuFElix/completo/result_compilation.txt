@@ -1,0 +1,8 @@
+vector.c: In function ‘VectorConstruct’:
+vector.c:21:19: warning: assignment to ‘void ***’ from incompatible pointer type ‘void **’ [-Wincompatible-pointer-types]
+   21 |     v->dadosVetor = (void **) malloc (sizeof(void *)*v->numElemVetorAloc);
+      |                   ^
+vector.c: In function ‘VectorPushBack’:
+vector.c:37:23: warning: assignment to ‘void ***’ from incompatible pointer type ‘void **’ [-Wincompatible-pointer-types]
+   37 |         v->dadosVetor = (void **) realloc (v->dadosVetor,sizeof(void*) * v->numElemVetorAloc);
+      |                       ^

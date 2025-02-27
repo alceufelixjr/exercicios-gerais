@@ -1,0 +1,8 @@
+/usr/bin/ld: Resultados/alceu-felix/agencia/main.o: in function `main':
+main.c:(.text+0x22): undefined reference to `CriaAgencia'
+/usr/bin/ld: main.c:(.text+0x32): undefined reference to `LeOperacoes'
+/usr/bin/ld: main.c:(.text+0x3e): undefined reference to `ImprimeOperacoesSuspeitas'
+/usr/bin/ld: main.c:(.text+0x4a): undefined reference to `ImprimeDoisCorrentistasComMaiorSaldo'
+/usr/bin/ld: main.c:(.text+0x56): undefined reference to `ImprimeSaldoTotal'
+/usr/bin/ld: main.c:(.text+0x62): undefined reference to `DestroiAgencia'
+collect2: error: ld returned 1 exit status
